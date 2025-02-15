@@ -56,7 +56,6 @@ async function getRandomComicAxios() {
 
 }
 
-
 window.onload = () => {
     getRandomComicFetch();
     getRandomComicAxios();
