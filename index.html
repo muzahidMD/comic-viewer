@@ -10,6 +10,44 @@
 </head>
 
 <body class="bg-gradient-to-r from-red-200 to-green-100 min-h-screen p-8">
+    <div class="container mx-auto">
+        <h1 class="text-5xl font-semibold text-center mb-5">Comic Viewer</h1>
+
+        <div class="grid grid-cols-2 gap-8">
+            <!-- Using Fetch API Comic -->
+            <div class="bg-red-50 p-3 flex flex-col items-center rounded border">
+                <h2 class="text-3xl font-semibold mb-5">Using Fetch API Comic</h2>
+                <div class="">
+                    <div class="flex flex-col items-center gap-1">
+                        <img id="fetch-comic-img" src="" alt="" class="max-w-full h-auto hidden">
+                        <h3 id="fetch-comic-title" class="text-xl font-medium"></h3>
+                        <p id="fetch-comic-desc"></p>
+                        <button onclick="getRandomComicFetch()"
+                            class="px-4 py-2 text-white rounded bg-red-400 hover:bg-red-500 font-medium transition my-2">
+                            Load Random Comic
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-red-50 p-3 flex flex-col items-center rounded border">
+                <!-- Using Axios Comic -->
+                <h2 class="text-3xl font-semibold mb-5">Using Axios Comic</h2>
+                <div class="">
+                    <div class="flex flex-col items-center gap-1">
+                        <img id="axios-comic-img" src="" alt="" class="max-w-full h-auto hidden">
+                        <h3 id="axios-comic-title" class="text-xl font-medium"></h3>
+                        <p id="axios-comic-desc"></p>
+                        <button onclick="getRandomComicAxios()"
+                            class="px-4 py-2 text-white rounded bg-green-400 hover:bg-green-500 font-medium transition my-2">
+                            Load Random Comic
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
